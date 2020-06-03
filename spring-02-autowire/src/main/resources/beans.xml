@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="dog" class="com.project.Dog"/>
+    <bean id="cat" class="com.project.Cat"/>
+
+    <!--
+    byName:会自动在容器上下文中查找，和自己对象当中的属性相同的beanid
+    byType:会自动在容器上下文中查找，和自己对象当中的属性类型相同的beanid
+    -->
+    <bean id="people" class="com.project.People" scope="prototype" autowire="byType">
+            <property name="name" value="zs" ></property>
+          <!--  <property name="cat" ref="cat" ></property>
+            <property name="dog" ref="dog" ></property>-->
+    </bean>
+
+</beans>

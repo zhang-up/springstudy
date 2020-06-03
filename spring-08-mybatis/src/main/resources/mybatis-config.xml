@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--mysql的主配置文件-->
+<configuration>
+
+
+<!--    <mappers>
+      &lt;!&ndash;  <mapper resource="com/project/dao/UserDao.xml"></mapper>&ndash;&gt;
+        <package name="com.project.dao"></package>
+    </mappers>-->
+    <mappers>
+    <package name="com.project.dao" />
+    </mappers>
+
+</configuration>
