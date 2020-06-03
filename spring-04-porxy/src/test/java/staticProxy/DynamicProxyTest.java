@@ -33,5 +33,6 @@ public class DynamicProxyTest {
 		for (Class<?> anInterface : interfaces) {
 			System.out.println("superclass--"+superclass);
 		}
+		//dj ds
 	}
 }
